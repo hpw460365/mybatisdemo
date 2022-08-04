@@ -2,9 +2,7 @@ package com.example.demo.bean;
 
 import lombok.Data;
 
-import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 
 @Data
 public class Company {
@@ -15,5 +13,5 @@ public class Company {
 
     private Date createTime;
 
-    private Set<Employee> employees;
+//    private Set<Employee> employees;
 }
