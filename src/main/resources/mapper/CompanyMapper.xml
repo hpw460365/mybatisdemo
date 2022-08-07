@@ -7,7 +7,7 @@
         select * from mybatis.company
     </select>
 
-    <insert id="insert" parameterType="com.example.demo.bean.Company">
-        insert into mybatis.company values(#{id},#{createTime},#{name})
+    <insert id="insert" parameterType="com.example.demo.bean.Company" useGeneratedKeys="true" keyProperty="id">
+        insert into mybatis.company values(#{id},#{createTime},#{name},#{version})
     </insert>
 </mapper>
